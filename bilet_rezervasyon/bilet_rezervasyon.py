@@ -1,13 +1,13 @@
 class Etkinlik:
-    def __init__(self, isim, tarih, yer):
+    def __init__(self, isim, tarih, year):
         self.isim = isim
         self.tarih = tarih
-        self.yer = yer
+        self.year = year
         self.biletler = []
 
     def bilet_ekle(self, bilet):
         self.biletler.append(bilet)
-    
+
     def biletleri_goster(self):
         for bilet in self.biletler:
             print(bilet)
@@ -18,20 +18,19 @@ class Bilet:
         self.fiyat = fiyat
         self.rezerve_eden = isim
     
-    def __str__(self):
-        return f"{self.kategori} - {self.fiyat}, Rezerve eden: {self.rezerve_eden}"
+    def __str__(self) -> str:
+        return f"{self.kategori} - {self.fiyat}, Rezerve eden : {self.rezerve_eden}"
+    
 
-konser = Etkinlik("Konser", "12.12.2023", "Ankara")
+konser = Etkinlik("Konser", "12.12.2024", "Ankara")
 # print(konser.isim)
-# print(konser.tarih) 
-# print(konser.yer)
-
+# print()
 bilet1 = Bilet("VIP", 250, "Ali Demir")
-bilet2 = Bilet("Normal", 150, "Caner Ak")
-
-# print(bilet1.kategori, bilet1.fiyat, bilet1.rezerve_eden)
-# print(bilet2.kategori, bilet2.fiyat, bilet2.rezerve_eden)
+bilet2 = Bilet("Normal", 150, "Mehmet Veli")
+bilet3 = Bilet("VIP", 350, "Hakan Akinci")
 
 konser.bilet_ekle(bilet1)
 konser.bilet_ekle(bilet2)
+konser.bilet_ekle(bilet3)
+
 konser.biletleri_goster()

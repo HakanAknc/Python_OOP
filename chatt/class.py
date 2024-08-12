@@ -22,7 +22,7 @@ class Araba:
 
     def araba_bilgi(self):
         return f"{self.id} {self.marka} {self.seri} {self.renk} {self.yil} {self.yakit} {self.durum} {self.kilometre} {self.motor_gucu}"
-    
+
 
 # Araba sınıfından bir nesne oluşturalım
 araba1 = Araba("1 - ", "Mercedes-Benz - ","G Serisi - ","Siyah - ","2023 - ","Benzin - ","İkinci el - "," 6.475 - "," 585 hp - ")
