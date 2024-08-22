@@ -1,8 +1,8 @@
 """
-super() Fonksiyonu
-super() fonksiyonu, bir alt sınıfın (subclass) üst sınıfının (superclass) metodlarına erişmesini sağlar.
-Genellikle alt sınıfta __init__ metodunu yeniden tanımlarken, üst sınıfın __init__ metodunu da çağırmak için kullanılır. 
-Bu sayede, üst sınıfın özellikleri ve davranışları alt sınıfa aktarılabilir ve yeniden kullanılabilir.
+ ? super() Fonksiyonu
+ super() fonksiyonu, bir alt sınıfın (subclass) üst sınıfının (superclass) metodlarına erişmesini sağlar.
+ Genellikle alt sınıfta __init__ metodunu yeniden tanımlarken, üst sınıfın __init__ metodunu da çağırmak için kullanılır. 
+ Bu sayede, üst sınıfın özellikleri ve davranışları alt sınıfa aktarılabilir ve yeniden kullanılabilir.
 """
 
 class Arac:                                 # superclass
